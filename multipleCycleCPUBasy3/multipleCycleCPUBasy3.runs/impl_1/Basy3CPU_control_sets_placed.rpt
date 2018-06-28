@@ -1,0 +1,131 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Wed Jun 20 10:18:34 2018
+| Host         : DESKTOP-RPTLTMM running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Basy3CPU_control_sets_placed.rpt
+| Design       : Basy3CPU
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    78 |
+| Minimum Number of register sites lost to control set restrictions |    62 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             213 |           87 |
+| No           | No                    | Yes                    |              23 |            8 |
+| No           | Yes                   | No                     |              71 |           32 |
+| Yes          | No                    | No                     |             520 |          332 |
+| Yes          | No                    | Yes                    |              39 |           14 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-----------------------------------+---------------------------------+------------------+----------------+
+|           Clock Signal           |           Enable Signal           |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++----------------------------------+-----------------------------------+---------------------------------+------------------+----------------+
+|  myCPU/myCU/PCWre_reg/G0         |                                   |                                 |                1 |              1 |
+|  myCPU/myCU/RegDst_reg[0]/G0     |                                   |                                 |                1 |              1 |
+|  myCPU/myCU/RegDst_reg[1]/G0     |                                   |                                 |                1 |              1 |
+|  myclock/CLK                     |                                   |                                 |                1 |              1 |
+|  myCPU/myCU/PCSrc_reg[1]_i_2_n_0 |                                   | myCPU/myCU/PCSrc_reg[1]_i_3_n_0 |                1 |              2 |
+|  myclock/CLK                     |                                   | myCPU/myPC/IAddr_reg_rep[0]_0   |                1 |              2 |
+|  Led_BUFG                        |                                   | myCPU/myPC/IAddr_reg_rep[0]_0   |                2 |              3 |
+| ~Led_BUFG                        |                                   | myCPU/myCU/DR_reg[5]            |                4 |              5 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[14][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[13][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[60][7]_2[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[12][7]_1[0] |                                 |                7 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[11][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[10][7]_1[0] |                                 |                8 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[9][7]_1[0]  |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[8][7]_1[0]  |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[7][7]_1[0]  |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[6][7]_1[0]  |                                 |                2 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/E[0]                |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[5][7]_1[0]  |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[59][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[58][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[57][7]_1[0] |                                 |                3 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[56][7]_2[0] |                                 |                7 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[55][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[54][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[53][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[52][7]_1[0] |                                 |                7 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[51][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[50][7]_1[0] |                                 |                7 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[4][7]_1[0]  |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[48][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[49][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[46][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[47][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[45][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[44][7]_1[0] |                                 |                7 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[43][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[42][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[41][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[40][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[3][7]_3[0]  |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[39][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[38][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[37][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[36][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[35][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[34][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[33][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[32][7]_1[0] |                                 |                3 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[31][7]_1[0] |                                 |                8 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[30][7]_1[0] |                                 |                3 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[29][7]_1[0] |                                 |                7 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[2][7]_1[0]  |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[28][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[27][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[26][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[25][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[24][7]_1[0] |                                 |                3 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[23][7]_1[0] |                                 |                4 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[22][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[21][7]_1[0] |                                 |                8 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[20][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[1][7]_1[0]  |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[19][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[18][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[16][7]_1[0] |                                 |                5 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[15][7]_1[0] |                                 |                6 |              8 |
+| ~Led_BUFG                        | myCPU/myALUDR/ram_reg[17][7]_1[0] |                                 |                5 |              8 |
+|  CLK_IBUF_BUFG                   |                                   | myCPU/myPC/IAddr_reg_rep[0]_0   |                5 |             18 |
+| ~Led_BUFG                        |                                   | myCPU/myIR/DR_reg[31]_2         |               14 |             32 |
+| ~Led_BUFG                        |                                   | myCPU/myIR/DR_reg[31]_3         |               13 |             32 |
+| ~Led_BUFG                        | myCPU/myCU/IR_reg[31][0]          |                                 |               17 |             32 |
+|  Reset_IBUF_BUFG                 |                                   |                                 |                9 |             32 |
+| ~Led_BUFG                        |                                   |                                 |               16 |             33 |
+|  Led_BUFG                        | myCPU/myCU/PCWre_reg/Q            | myCPU/myPC/IAddr_reg_rep[0]_0   |               14 |             39 |
+| ~Led_BUFG                        | myCPU/myCU/p_0_in1_out            |                                 |               12 |             96 |
+|  Led_BUFG                        |                                   |                                 |               58 |            144 |
++----------------------------------+-----------------------------------+---------------------------------+------------------+----------------+
+
+

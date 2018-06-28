@@ -1,0 +1,607 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Jun 20 10:16:51 2018
+# Process ID: 4484
+# Log file: C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.runs/synth_1/Basy3CPU.vds
+# Journal file: C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Basy3CPU.tcl -notrace
+Command: synth_design -top Basy3CPU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Synth 8-2292] literal value truncated to fit in 8 bits [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:56]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 273.430 ; gain = 101.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Basy3CPU' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Basy3CPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-638] synthesizing module 'manualClock' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/manualClock.v:22]
+INFO: [Synth 8-256] done synthesizing module 'manualClock' (2#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/manualClock.v:22]
+INFO: [Synth 8-638] synthesizing module 'multiCycleCPU' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/multiCycleCPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'PC' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-256] done synthesizing module 'PC' (3#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/PC.v:22]
+INFO: [Synth 8-638] synthesizing module 'InsMem' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Sherry/Desktop/rom_data.txt' is read successfully [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/InsMem.v:32]
+INFO: [Synth 8-256] done synthesizing module 'InsMem' (4#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'IR' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'IR' (5#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/IR.v:23]
+INFO: [Synth 8-638] synthesizing module 'CU' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'CU' (6#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/ALU.v:30]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (7#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_32bits_2to1' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/MUX_32bits_2to1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_32bits_2to1' (8#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/MUX_32bits_2to1.v:23]
+INFO: [Synth 8-638] synthesizing module 'MUX_5bit_4to1' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/MUX_5bit_4to1.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MUX_5bit_4to1' (9#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/MUX_5bit_4to1.v:23]
+INFO: [Synth 8-638] synthesizing module 'RF' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/RF.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RF' (10#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/RF.v:23]
+INFO: [Synth 8-638] synthesizing module 'DR' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/DR.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DR' (11#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/DR.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/DataMem.v:23]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+RAM "ram_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (12#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-638] synthesizing module 'Extend' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Extend' (13#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-638] synthesizing module 'ExtendSa' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/ExtendSa.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ExtendSa' (14#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/ExtendSa.v:23]
+INFO: [Synth 8-638] synthesizing module 'nextPC' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:42]
+WARNING: [Synth 8-567] referenced signal 'readData1' should be on the sensitivity list [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:36]
+WARNING: [Synth 8-567] referenced signal 'jump' should be on the sensitivity list [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:36]
+INFO: [Synth 8-256] done synthesizing module 'nextPC' (15#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'multiCycleCPU' (16#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/multiCycleCPU.v:23]
+INFO: [Synth 8-638] synthesizing module 'SelectDisplay' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/SelectDisplay.v:22]
+INFO: [Synth 8-256] done synthesizing module 'SelectDisplay' (17#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/SelectDisplay.v:22]
+WARNING: [Synth 8-689] width (32) of port connection 'NextPC' does not match port width (8) of module 'SelectDisplay' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Basy3CPU.v:47]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/display.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/display.v:49]
+INFO: [Synth 8-226] default block is never used [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/display.v:69]
+INFO: [Synth 8-256] done synthesizing module 'display' (18#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/display.v:22]
+INFO: [Synth 8-256] done synthesizing module 'Basy3CPU' (19#1) [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Basy3CPU.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 304.309 ; gain = 132.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 304.309 ; gain = 132.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'Reset_IBUF'. [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new/constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new/constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 602.633 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'CU'
+INFO: [Synth 8-5546] ROM "PCSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "RegDst" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "IRWre" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/ALU.v:30]
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/InsMem.v:39]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              011 |                              010
+                 iSTATE3 |                              100 |                              100
+*
+                 iSTATE2 |                              001 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'CU'
+WARNING: [Synth 8-327] inferring latch for variable 'PCWre_reg' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/CU.v:229]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSrc_reg' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/CU.v:172]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/CU.v:196]
+WARNING: [Synth 8-327] inferring latch for variable 'PC4_reg' [C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/nextPC.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 183   
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 196   
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 62    
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module manualClock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module InsMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 3     
+	   9 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module MUX_32bits_2to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MUX_5bit_4to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+Module RF 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module DR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module DataMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 3     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 183   
+	   2 Input      1 Bit        Muxes := 183   
+	   5 Input      1 Bit        Muxes := 61    
+Module Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module nextPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+Module SelectDisplay 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "myCPU/myALU/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+WARNING: [Synth 8-3917] design Basy3CPU has port dp driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 602.633 ; gain = 430.953
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|InsMem      | rom        | 128x8         | LUT            | 
+|InsMem      | rom__1     | 128x8         | LUT            | 
+|InsMem      | rom__2     | 128x8         | LUT            | 
+|InsMem      | rom__3     | 128x8         | LUT            | 
+|Basy3CPU    | rom        | 128x8         | LUT            | 
+|Basy3CPU    | rom__4     | 128x8         | LUT            | 
+|Basy3CPU    | rom__5     | 128x8         | LUT            | 
+|Basy3CPU    | rom__6     | 128x8         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: 
++------------+------------------------+-----------+----------------------+---------------+-------------------+
+|Module Name | RTL Object             | Inference | Size (Depth x Width) | Primitives    | Hierarchical Name | 
++------------+------------------------+-----------+----------------------+---------------+-------------------+
+|Basy3CPU    | myCPU/myRF/RegFile_reg | Implied   | 32 x 32              | RAM32M x 12   | Basy3CPU/ram__1   | 
++------------+------------------------+-----------+----------------------+---------------+-------------------+
+
+Note: The table shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the Distributed RAM name as it appears in the hierarchical module and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[31] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[30] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[29] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[28] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[27] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[26] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[25] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[24] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[23] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[22] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[21] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[20] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[19] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[18] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[17] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[16] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[15] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[14] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[13] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[12] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[11] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[10] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[9] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[8] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[7] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[6] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[5] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[4] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[3] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[2] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[1] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myInsMem/IDataOut_reg[0] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[31] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[30] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[29] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[28] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[27] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[26] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[25] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[24] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[23] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[22] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[21] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[20] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[19] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[18] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[17] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[16] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[15] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[14] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[13] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[12] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[11] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[10] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[9] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[8] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[7] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DR_reg[6] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[18] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[19] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[20] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[21] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[22] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[23] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[24] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myclock/wires_reg[25] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[31] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[30] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[29] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[28] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[27] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[26] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[25] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[24] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[23] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[22] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[21] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[20] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[19] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[18] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[17] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[16] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[15] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[14] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[13] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[12] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[11] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[10] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[9] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[8] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myPC/IAddr_reg_rep[7] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[31] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[30] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[29] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[28] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[27] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[26] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[25] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[24] ) is unused and will be removed from module Basy3CPU.
+WARNING: [Synth 8-3332] Sequential element (\myCPU/myALUDR/DataOut_reg[23] ) is unused and will be removed from module Basy3CPU.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 602.633 ; gain = 430.953
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 602.633 ; gain = 430.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:51 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |    33|
+|3     |LUT1   |    60|
+|4     |LUT2   |    88|
+|5     |LUT3   |   593|
+|6     |LUT4   |   126|
+|7     |LUT5   |   672|
+|8     |LUT6   |  1258|
+|9     |MUXF7  |   120|
+|10    |MUXF8  |    24|
+|11    |RAM32M |    12|
+|12    |FDCE   |    62|
+|13    |FDRE   |   767|
+|14    |LD     |    32|
+|15    |LDC    |     2|
+|16    |LDCP   |     3|
+|17    |IBUF   |     5|
+|18    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+--------------+------+
+|      |Instance     |Module        |Cells |
++------+-------------+--------------+------+
+|1     |top          |              |  3872|
+|2     |  myCPU      |multiCycleCPU |  3801|
+|3     |    myADR    |DR            |   101|
+|4     |    myALU    |ALU           |    18|
+|5     |    myALUDR  |DR_0          |   345|
+|6     |    myBDR    |DR_1          |  1057|
+|7     |    myCU     |CU            |   201|
+|8     |    myDBDR   |DR_2          |    77|
+|9     |    myDM     |DataMem       |  1258|
+|10    |    myIR     |IR            |   468|
+|11    |    myNextPC |nextPC        |    70|
+|12    |    myPC     |PC            |   192|
+|13    |    myRF     |RF            |    14|
+|14    |  myclock    |clk_div       |    41|
+|15    |  mykey      |manualClock   |     1|
+|16    |  mymux      |display       |     8|
++------+-------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 123 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 700.152 ; gain = 192.590
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:52 . Memory (MB): peak = 700.152 ; gain = 528.473
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 634 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  LD => LDCE: 32 instances
+  LDC => LDCE: 2 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 3 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 112 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 700.152 ; gain = 491.094
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 700.152 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 20 10:17:47 2018...

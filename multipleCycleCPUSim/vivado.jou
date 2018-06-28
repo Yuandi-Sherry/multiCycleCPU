@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Jun 19 14:13:33 2018
+# Process ID: 13456
+# Log file: C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPU/vivado.log
+# Journal file: C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPU/multipleCycleCPU.xpr
+save_project_as multipleCycleCPUBasy3 C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3 -force
+launch_runs impl_1
+wait_on_run impl_1
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/clk_div.v w ]
+add_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/clk_div.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/display.v w ]
+add_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/display.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/manualClock.v w ]
+add_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/manualClock.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/selectDisplay.v w ]
+add_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/selectDisplay.v
+update_compile_order -fileset sources_1
+remove_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/selectDisplay.v
+file delete -force C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/selectDisplay.v
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/SelectDisplay.v w ]
+add_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/SelectDisplay.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Basy3CPU.v w ]
+add_files C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/sources_1/new/Basy3CPU.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+file mkdir C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1
+file mkdir C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new
+close [ open C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 C:/Users/Sherry/Documents/Curriculums/ECOP/multipleCycleCPUBasy3/multipleCycleCPUBasy3.srcs/constrs_1/new/constraints.xdc
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1
+open_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
